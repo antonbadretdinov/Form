@@ -5,31 +5,13 @@
 	<title></title>
 </head>
 <body>
-	
-		Введите имя
+	<form action="" onsubmit="submitAction(this)" name="nameForm">
+	<label for="nameInput">Введите имя</label>
 		<br>
-	<label><input type="text"></label>
+	<input name="nameInput" type="text"></label>
 	<br>
-	<br>
-	<label><input name="b" type="radio">Усы</label>
-	<br>
-	<label><input name="b" type="radio">Рот</label>
-	<br>
-	<label><input name="b" type="radio">Хвост</label>
-<br>
-	<br>
-	Введите число
-	<br>
-	<label><input type="text"></label>
-	<br>
-	<br>
-	<label><input name="d" type="radio">Сосисочки</label>
-	<br>
-	<label><input name="d" type="radio">Котлетки</label>
-	<br>
-	<label><input name="d" type="radio">Пюрешка</label>
-	<br>
-	<br>
-	<button>Отправить</button>
+	<button type="submit" onclick="SubmitAction()">Отправить</button>
+	</form>
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
