@@ -3,15 +3,48 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<link rel="Stylesheet" href="style.css">
 </head>
 <body>
-	<form action="" onsubmit="submitAction(this)" name="nameForm">
-	<label for="nameInput">Введите имя</label>
+	<form action="http://62.68.136.218/form/save_form.php" onsubmit="submitAction(this)" id="idForm" name="nameForm" method="post">
+		<label>Введите имя</label>
 		<br>
-	<input name="nameInput" type="text"></label>
-	<br>
-	<button type="submit" onclick="SubmitAction()">Отправить</button>
+		<input type="text" name="Name">
+		<br>
+		<br>
+		<input type="radio" name="gg" value="Усы">
+		<label>Усы</label>
+		<br>
+		<input type="radio" name="gg" value="Рот">
+		<label>Рот</label>
+		<br>
+		<input type="radio" name="gg" value="Хвост">
+		<label>Хвост</label>
+		<br>
+		<br>
+		<label>Введите число</label>
+		<br>
+		<input type="text" name="Number">
+		<br>
+		<br>
+		<input type="radio" name="food" value="Сосисочки">
+		<label>Сосисочки</label>
+		<br>
+		<input type="radio" name="food" value="Котлетки">
+		<label>Котлетки</label>
+		<br>
+		<input type="radio" name="food" value="Пюрешка">
+		<label>Пюрешка</label>
+		<br>
+		<br>
+		<input type="button" onclick="submitAction(getElementById('idForm'))" value="Сгенерировать"/>
+		<button type="submit">Отправить что нибудь</button>
 	</form>
+	Иногда <div id="name"></div> захотел покушать. Единственное ,что у него было в холодильнике - <div id="radioFood"></div>(ровно <div id="number"></div> кг). <div id="gg"></div> - ненужное слово в этом тексте.
+
+
+
+	<div id="textStory"></div>
 	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
