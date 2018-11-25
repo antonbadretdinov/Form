@@ -7,4 +7,6 @@ function submitAction(form){
 	number.innerHTML = form.Number.value;
 	var word = document.getElementById("gg");
 	gg.innerHTML = form.gg.value;
+	var text = document.getElementById("text");
+	text.style.visibility = "visible";
 }
